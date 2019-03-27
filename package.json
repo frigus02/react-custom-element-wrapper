@@ -1,0 +1,30 @@
+{
+  "name": "react-custom-element-wrapper",
+  "version": "1.0.0",
+  "description": "Wrapper function around a Custom Element, which returns a React component. Use any Custom Element in React, with attributes, properties and events.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "github:frigus02/react-custom-element",
+  "author": "Jan Kuehle <jkuehle90@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.5.7"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.8",
+    "prettier": "^1.16.4",
+    "react": "^16.8.5",
+    "typescript": "^3.3.4000"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,md,ts}\"",
+    "compile": "tsc --outDir dist && tsc -m umd --outDir dist/umd"
+  },
+  "keywords": [
+    "react",
+    "custom element"
+  ]
+}
