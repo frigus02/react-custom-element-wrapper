@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Wrapper function around a Custom Element, which returns a React component. Use any Custom Element in React, with attributes, properties and events.",
   "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "unpkg": "dist/umd/index.js",
   "types": "dist/index.d.ts",
-  "repository": "github:frigus02/react-custom-element",
+  "repository": "github:frigus02/react-custom-element-wrapper",
   "author": "Jan Kuehle <jkuehle90@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -14,14 +16,19 @@
     "@types/react": "^16.8.8",
     "prettier": "^1.16.4",
     "react": "^16.8.5",
-    "typescript": "^3.3.4000"
+    "rimraf": "^2.6.3",
+    "typescript": "^3.4.1"
   },
   "peerDependencies": {
     "react": "^16.8.0"
   },
   "scripts": {
-    "format": "prettier --write \"**/*.{js,md,ts}\"",
-    "compile": "tsc --outDir dist && tsc -m umd --outDir dist/umd"
+    "clean": "rimraf ./dist",
+    "build": "yarn run clean && yarn run build:cjs && yarn run build:umd && yarn run build:esm",
+    "build:cjs": "tsc --outDir dist",
+    "build:umd": "tsc --module UMD --outDir dist/umd",
+    "build:esm": "tsc --module ES6 --target ES6 --outDir dist/esm",
+    "format": "prettier --write \"**/*.{js,md,ts}\""
   },
   "keywords": [
     "react",

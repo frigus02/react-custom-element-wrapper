@@ -1,4 +1,5 @@
-import React, {
+import {
+    createElement,
     useLayoutEffect,
     useRef,
     WeakValidationMap,
@@ -150,7 +151,7 @@ function customElement<T>(
             <CustomElementAttributes>{}
         );
 
-        return React.createElement(
+        return createElement(
             elementName,
             {
                 ...elementAttrs,
