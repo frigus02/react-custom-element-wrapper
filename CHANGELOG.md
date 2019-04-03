@@ -6,8 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-## 0.0.1
+## 1.0.0
 
 -   First release.
 
-[unreleased]: https://github.com/frigus02/kyml/compare/v0.0.1...HEAD
+[unreleased]: https://github.com/frigus02/kyml/compare/v1.0.0...HEAD
