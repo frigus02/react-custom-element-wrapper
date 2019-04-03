@@ -80,7 +80,7 @@ You can type elements generated using this library by defining a type for the Re
 
 -   Attributes can only be mapped to a prop of type `string`.
 -   Properties can be mapped to anything.
--   Events can only be mapped to a `EventListenerOrEventListenerObject`. You probably want to use something like `CustomElement => void`. And if the custom element provides a typed event object, you can use that instead.
+-   Events can only be mapped to a [`EventListenerOrEventListenerObject`](https://github.com/Microsoft/TypeScript/blob/8a19e4bcf95de764ca18bc0276697ab86bd783e4/lib/lib.dom.d.ts#L17493). You probably want to use something like `CustomElement => void`. And if the custom element provides a typed event object, you can use that instead.
 
 ```ts
 import customElement from "react-custom-element-wrapper";
