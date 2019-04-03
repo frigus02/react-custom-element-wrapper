@@ -4,8 +4,7 @@
         "module": "CommonJS",
         "moduleResolution": "node",
         "declaration": true,
-        "strict": true,
-        "allowSyntheticDefaultImports": true
+        "strict": true
     },
     "files": ["src/index.ts"]
 }

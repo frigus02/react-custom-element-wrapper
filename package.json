@@ -1,6 +1,6 @@
 {
   "name": "react-custom-element-wrapper",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "Wrapper function around a Custom Element, which returns a React component. Use any Custom Element in React, with attributes, properties and events.",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
